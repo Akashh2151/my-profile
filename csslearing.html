@@ -5,14 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
     <style>
-        li{
+        /* li{
             color: orange;
-        }
-        h3{
+        } */
+        #address{
             color: cadetblue;
         }
         #summary{
             color: chocolate;
+        }
+        span{
+            color: red;
+            background-color: bisque;
+        }
+        /* This is the combinator selector, which is not recommended */
+        #summary2, #summary3, h3{
+            color: cadetblue;
+            font-weight: bolder;
+            font-size: larger;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        .fruit{
+            /* color: rgb(30, 100, 100);   */
+            color: #036753;
+        }
+        .para{
+            color: #000000;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-decoration: underline;
+            /* text-shadow: 4px 4px 2px rgba(0,0,0,0.6); */
+        }
+        .listFruits{
+            border: 2px solid red;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .myspan{
+            color: coral;
+            text-decoration: underline;
+            
         }
     </style>
 </head>
@@ -23,11 +59,23 @@
     <h3 id="summary"> Professional Summary </h3>
     <ul>
         <li>Lorem ipsum dolor sit.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li id="summary2">Lorem ipsum dolor sit amet.</li>
+        <li id="summary3">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
         <li>Lorem, ipsum dolor.</li>
     </ul>
-    <h3> My Permanent address</h3>
-    
+    <h3> My <span> Permanent </span> address</h3>
+    <h3 class="listFruits"> List Of Fruits </h3>
+    <ul>
+        <li> Apple </li>
+        <li class="fruit"> Mango </li>
+        <li class="fruit"> Water Melon </li>
+        <li> Grapes </li>
+    </ul>
+
+    <p class="para">
+       <span class="myspan">Lorem ipsum dolor</span>  sit amet consectetur adipisicing elit. Perferendis rem impedit modi. Voluptatum est veritatis corporis quaerat non numquam eum qui. Odio totam neque magnam eligendi deleniti debitis consequatur magni!
+    </p>
+
+
 </body>
 </html>
