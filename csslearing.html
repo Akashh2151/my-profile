@@ -19,7 +19,7 @@
             background-color: bisque;
         }
         /* This is the combinator selector, which is not recommended */
-        #summary2, #summary3, h3{
+        #summary2, #summary3{
             color: cadetblue;
             font-weight: bolder;
             font-size: larger;
@@ -37,7 +37,7 @@
             text-transform: capitalize;
             letter-spacing: 2px;
             word-spacing: 5px;
-            text-decoration: underline;
+            /* text-decoration: underline; */
             /* text-shadow: 4px 4px 2px rgba(0,0,0,0.6); */
         }
         .listFruits{
@@ -45,11 +45,38 @@
             text-align: center;
             font-family:'Courier New', Courier, monospace;
         }
-        .myspan{
-            color: coral;
+        .dolor{
+            color: brown;
             text-decoration: underline;
-            
         }
+        .education{
+            border: 5px solid rgb(83, 62, 62);
+            /* padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            padding-left: 50px; */
+            /* padding: 30px 50px 30px 50px; */
+            /* padding: 30px 50px; */
+            padding: 20px;
+            /* margin-top: 100px;
+            margin-right: 30px;
+            margin-bottom: 100px;
+            margin-left: 50px; */
+            /* margin: 100px 50px; */
+            margin: 50px;
+
+        }
+        .office{
+            border: 2px solid orange;
+            padding: 30px;
+        }
+        .dummy li{
+            list-style-type: circle;
+        }
+        .fruits li{
+            list-style-type: upper-roman; /*  lower-alpha | upper-alpha */
+        }
+
     </style>
 </head>
 <body>
@@ -57,7 +84,7 @@
     <p style="color: orange; font-weight: bolder; font-size: larger;"> Lorem ipsum dolor sit amet consectetur. </p>
     
     <h3 id="summary"> Professional Summary </h3>
-    <ul>
+    <ul class="dummy">
         <li>Lorem ipsum dolor sit.</li>
         <li id="summary2">Lorem ipsum dolor sit amet.</li>
         <li id="summary3">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
@@ -65,17 +92,24 @@
     </ul>
     <h3> My <span> Permanent </span> address</h3>
     <h3 class="listFruits"> List Of Fruits </h3>
-    <ul>
+    <ol class="fruits">
         <li> Apple </li>
         <li class="fruit"> Mango </li>
         <li class="fruit"> Water Melon </li>
         <li> Grapes </li>
-    </ul>
+    </ol>
 
     <p class="para">
-       <span class="myspan">Lorem ipsum dolor</span>  sit amet consectetur adipisicing elit. Perferendis rem impedit modi. Voluptatum est veritatis corporis quaerat non numquam eum qui. Odio totam neque magnam eligendi deleniti debitis consequatur magni!
+        Lorem <span class="dolor">ipsum dolor sit</span> amet consectetur adipisicing elit. Perferendis rem impedit modi. Voluptatum est veritatis corporis quaerat non numquam eum qui. Odio totam neque magnam eligendi deleniti debitis consequatur magni!
     </p>
 
+    <p class="education">
+        My Education Detail
+    </p>
+
+    <h3 class="office">
+        My Office Address
+    </h3>
 
 </body>
 </html>
